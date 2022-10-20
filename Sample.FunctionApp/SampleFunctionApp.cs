@@ -1,6 +1,7 @@
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 using Sample.FunctionApp.Services.Contracts;
+using System.Threading;
 
 namespace Sample.FunctionApp;
 
@@ -23,12 +24,13 @@ public class SampleFunctionApp
 
     [FunctionName("ProcessServiceBusMessage")]
     public void ProcessServiceBusMessage(
-        [ServiceBusTrigger(queueName: "%QueueName%", Connection = "QueueConnectionString")] string messageContent, ExecutionContext executionContext)
+        [ServiceBusTrigger(queueName: "%QueueName%", Connection = "QueueConnectionString")] string messageContent, Microsoft.Azure.WebJobs.ExecutionContext executionContext)
     {
         scopedService.DoWork(executionContext, executionContext.FunctionName);
         singletonService.DoWork(executionContext, executionContext.FunctionName);
         transientService.DoWork(executionContext, executionContext.FunctionName);
         consolidatedService.Execute(executionContext);
         logger.LogTrace("Function:{0}||InvocationId:{1}||Message:{2}", executionContext.FunctionName, executionContext.InvocationId, messageContent);
+        Thread.Sleep(10000);
     }
 }

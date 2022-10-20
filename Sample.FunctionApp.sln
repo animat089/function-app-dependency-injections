@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.FunctionApp", "Sampl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.FunctionApp.Tests", "Sample.FunctionApp.Tests\Sample.FunctionApp.Tests.csproj", "{A6F1D114-7569-4030-816B-C76C0BB8943E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.FunctionApp.MsgBlaster", "Sample.FunctionApp.MsgBlaster\Sample.FunctionApp.MsgBlaster.csproj", "{D7FF128B-B323-4B8F-858C-BD28F4EFECE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A6F1D114-7569-4030-816B-C76C0BB8943E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6F1D114-7569-4030-816B-C76C0BB8943E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6F1D114-7569-4030-816B-C76C0BB8943E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7FF128B-B323-4B8F-858C-BD28F4EFECE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7FF128B-B323-4B8F-858C-BD28F4EFECE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7FF128B-B323-4B8F-858C-BD28F4EFECE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7FF128B-B323-4B8F-858C-BD28F4EFECE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
