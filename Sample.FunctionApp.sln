@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.FunctionApp", "Sample.FunctionApp\Sample.FunctionApp.csproj", "{77569630-EC19-4D65-BBC2-629433BF3BE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.FunctionApp", "src\Sample.FunctionApp\Sample.FunctionApp.csproj", "{77569630-EC19-4D65-BBC2-629433BF3BE7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.FunctionApp.Tests", "Sample.FunctionApp.Tests\Sample.FunctionApp.Tests.csproj", "{A6F1D114-7569-4030-816B-C76C0BB8943E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.FunctionApp.Tests", "tests\Sample.FunctionApp.Tests\Sample.FunctionApp.Tests.csproj", "{A6F1D114-7569-4030-816B-C76C0BB8943E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.FunctionApp.MsgBlaster", "Sample.FunctionApp.MsgBlaster\Sample.FunctionApp.MsgBlaster.csproj", "{D7FF128B-B323-4B8F-858C-BD28F4EFECE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.MsgBlaster", "src\Sample.MsgBlaster\Sample.MsgBlaster.csproj", "{D7FF128B-B323-4B8F-858C-BD28F4EFECE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{97137D6F-5E6A-4F05-988D-3CAAFC4B0349}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EA30C509-127D-4D62-B503-2F70BA6E72FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +34,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{77569630-EC19-4D65-BBC2-629433BF3BE7} = {97137D6F-5E6A-4F05-988D-3CAAFC4B0349}
+		{A6F1D114-7569-4030-816B-C76C0BB8943E} = {EA30C509-127D-4D62-B503-2F70BA6E72FA}
+		{D7FF128B-B323-4B8F-858C-BD28F4EFECE3} = {97137D6F-5E6A-4F05-988D-3CAAFC4B0349}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E8A45A59-9CC5-4FF9-8483-EA641E8E5BD9}

@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Sample.FunctionApp.MsgBlaster;
+namespace Sample.MsgBlaster;
 
 public class Program
 {

@@ -26,7 +26,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Sample.FunctionApp\Sample.FunctionApp.csproj" />
+	  <ProjectReference Include="..\..\src\Sample.FunctionApp\Sample.FunctionApp.csproj" />
 	</ItemGroup>
 
 </Project>
