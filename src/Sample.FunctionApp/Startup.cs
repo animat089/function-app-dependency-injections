@@ -11,6 +11,10 @@ namespace Sample.FunctionApp;
 [ExcludeFromCodeCoverage]
 internal class Startup : FunctionsStartup
 {
+    /// <summary>
+    /// Configure the dependencies in the function
+    /// </summary>
+    /// <param name="builder">object of the host builder</param>
     public override void Configure(IFunctionsHostBuilder builder)
     {
         builder.Services.AddScoped<IConsolidatedService, ConsolidatedService>();
