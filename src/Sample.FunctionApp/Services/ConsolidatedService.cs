@@ -8,9 +8,9 @@ namespace Sample.FunctionApp.Services;
 /// </summary>
 public class ConsolidatedService : IConsolidatedService
 {
-    private readonly IBaseService scopedService;
-    private readonly IBaseService singletonService;
-    private readonly IBaseService transientService;
+    private readonly IScopedService scopedService;
+    private readonly ISingletonService singletonService;
+    private readonly ITransientService transientService;
 
     /// <summary>
     /// Create a new instance of the <see cref="ConsolidatedService"/>

@@ -19,11 +19,11 @@ public class SampleFunctionApp
     /// <summary>
     /// Creates an instance of <see cref="SampleFunctionApp" />
     /// </summary>
-    /// <param name="singletonService"></param>
-    /// <param name="scopedService"></param>
-    /// <param name="transientService"></param>
-    /// <param name="consolidatedService"></param>
-    /// <param name="logger"></param>
+    /// <param name="singletonService">Object for singleton service</param>
+    /// <param name="scopedService">Object for scoped service</param>
+    /// <param name="transientService">Object for transient service</param>
+    /// <param name="consolidatedService">Object for consolidatedService</param>
+    /// <param name="logger">Object for microsoft logger</param>
     public SampleFunctionApp(ISingletonService singletonService, IScopedService scopedService, ITransientService transientService, IConsolidatedService consolidatedService, ILogger<SampleFunctionApp> logger)
     {
         this.scopedService = scopedService;
